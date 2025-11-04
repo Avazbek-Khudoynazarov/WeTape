@@ -49,7 +49,7 @@ export default function PatternedPage() {
               <p className={styles.infoText}>
                 Size, pattern and adhesion can be adjusted according to
                 <br />
-                the orderer's request.
+                the orderer&apos;s request.
               </p>
             </div>
           </div>

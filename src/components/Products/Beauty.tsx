@@ -47,7 +47,7 @@ export default function BeautyPage() {
               <p className={styles.infoText}>
                 Size, color and adhesion can be adjusted
                 <br />
-                according to the orderer's request.
+                according to the orderer&apos;s request.
               </p>
             </div>
           </div>

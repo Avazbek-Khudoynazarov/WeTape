@@ -6,7 +6,7 @@ export default function Header() {
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
-            THE WORLD'S<br />
+            THE WORLD&apos;S<br />
             BEST KINESIOLOGY TAPE
           </h1>
         </div>

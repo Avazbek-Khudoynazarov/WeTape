@@ -106,7 +106,7 @@ export default function InternationalSeminarPage() {
           <p className={styles.topText}>
             If you want to expand and lead your market,
             <br />
-            improve your clients' taping treatment skills
+            improve your clients&apos; taping treatment skills
             <br />
             through our expert training program.
           </p>

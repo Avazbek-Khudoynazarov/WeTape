@@ -76,7 +76,7 @@ export default function AboutUs() {
                 <p className={styles.cardText}>
                   We have been producing and developing body taping products since
                   1997. We also offer efficient taping training courses with the
-                  world's best instructors.
+                  world&apos;s best instructors.
                 </p>
               </div>
 

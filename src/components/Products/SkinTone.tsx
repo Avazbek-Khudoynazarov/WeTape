@@ -44,7 +44,7 @@ export default function SkinTonePage() {
               <h2 className={styles.infoTitle}>SPECIAL ORDER</h2>
               <p className={styles.infoText}>
                 Size, color and adhesion can be adjusted according to the
-                orderer's request.
+                orderer&apos;s request.
               </p>
             </div>
           </div>

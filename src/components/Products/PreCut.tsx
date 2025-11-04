@@ -48,7 +48,7 @@ export default function PreCutPage() {
               <p className={styles.infoText}>
                 Size, color, cutting interval and adhesion can be adjusted
                 <br />
-                according to the orderer's request.
+                according to the orderer&apos;s request.
               </p>
             </div>
           </div>

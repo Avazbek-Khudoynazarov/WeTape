@@ -61,7 +61,7 @@ export default function VariousSizePage() {
               <p className={styles.infoText}>
                 Size, color and adhesion can be adjusted according to the
                 <br />
-                orderer's request.
+                orderer&apos;s request.
               </p>
             </div>
           </div>

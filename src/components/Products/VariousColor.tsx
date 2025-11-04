@@ -45,7 +45,7 @@ export default function VariousColorPage() {
             <div className={styles.infoBlock}>
               <h2 className={styles.infoTitle}>SPECIAL ORDER</h2>
               <p className={styles.infoText}>
-                Size, color and adhesion can be adjusted according to the orderer's request.
+                Size, color and adhesion can be adjusted according to the orderer&apos;s request.
               </p>
             </div>
           </div>
