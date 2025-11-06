@@ -3,7 +3,7 @@ import styles from "./precut.module.css";
 
 export default function PreCutPage() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
           <h1 className={styles.bannerTitle}>Pre-cut</h1>
@@ -58,7 +58,10 @@ export default function PreCutPage() {
       {/* Additional Image Section */}
       <div className={styles.additionalImageSection}>
         <picture>
-          <source media="(max-width: 768px)" srcSet="/assets/product/mobile/pre2.png" />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/assets/product/mobile/pre2.png"
+          />
           <img
             src="/assets/product/pre2.png"
             alt="Pre-cut Collection"

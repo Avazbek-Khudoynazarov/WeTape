@@ -3,7 +3,7 @@ import styles from "./acutape.module.css";
 
 export default function AcuTapePage() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
@@ -36,9 +36,7 @@ export default function AcuTapePage() {
             {/* Stock Color */}
             <div className={styles.infoBlock}>
               <h2 className={styles.infoTitle}>STOCK COLOR</h2>
-              <p className={styles.infoText}>
-                Beige / Navyblue / Red
-              </p>
+              <p className={styles.infoText}>Beige / Navyblue / Red</p>
             </div>
           </div>
         </div>
@@ -47,7 +45,10 @@ export default function AcuTapePage() {
       {/* Additional Image Section */}
       <div className={styles.additionalImageSection}>
         <picture>
-          <source media="(max-width: 768px)" srcSet="/assets/product/mobile/acu2.png" />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/assets/product/mobile/acu2.png"
+          />
           <img
             src="/assets/product/acu2.png"
             alt="BB ACU Tape Collection"

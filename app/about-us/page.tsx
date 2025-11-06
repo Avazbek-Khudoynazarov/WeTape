@@ -56,16 +56,17 @@ export default function AboutUs() {
       {shouldShowSection("#wetape-inc") && (
         <>
           <div id="wetape-inc">
-            <div className={styles.redBanner}>
-              <div className={styles.bannerContent}>
-                <h1 className={styles.bannerTitle}>WETAPE Inc.</h1>
-                <p className={styles.bannerSubtitle}>
-                  Increase Your Market Dominance with Taping
-                  <br /> Treatment Experts!
-                </p>
+            <div className={styles.heroImage}>
+              <div className={styles.redBanner}>
+                <div className={styles.bannerContent}>
+                  <h1 className={styles.bannerTitle}>WETAPE Inc.</h1>
+                  <p className={styles.bannerSubtitle}>
+                    Increase Your Market Dominance with Taping
+                    <br /> Treatment Experts!
+                  </p>
+                </div>
               </div>
             </div>
-            <div className={styles.heroImage}></div>
           </div>
 
           <section className={styles.infoSection}>

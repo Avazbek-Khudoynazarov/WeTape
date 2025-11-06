@@ -2,8 +2,8 @@
   background-color: #db2a1ae6;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 10px 40px 80px;
-  position: relative;
+  padding: 30px 10px 30px 80px;
+  position: absolute;
   z-index: 1;
 }
 
@@ -37,8 +37,6 @@
   align-items: start;
 }
 
-
-
 .productImage {
   width: 100%;
   height: auto;
@@ -50,6 +48,7 @@
   flex-direction: column;
   gap: 40px;
   padding: 80px 60px;
+  margin-top: 130px;
 }
 
 .infoBlock {
@@ -123,9 +122,6 @@
 
 /* Mobile responsiveness (up to 768px) */
 @media (max-width: 768px) {
-
-
-
   .bannerContent {
     flex-direction: column;
     align-items: flex-start;
@@ -151,6 +147,7 @@
   .infoColumn {
     gap: 30px;
     padding: 40px 20px;
+    margin-top: 0px;
   }
 
   .infoTitle {
@@ -169,7 +166,6 @@
 
 /* Small mobile devices (up to 480px) */
 @media (max-width: 480px) {
-
   .bannerTitle {
     font-size: 32px;
   }

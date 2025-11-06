@@ -3,7 +3,7 @@ import styles from "./skintone.module.css";
 
 export default function SkinTonePage() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
@@ -53,7 +53,10 @@ export default function SkinTonePage() {
         {/* Additional Image Section */}
         <div className={styles.additionalImageSection}>
           <picture>
-            <source media="(max-width: 768px)" srcSet="/assets/product/mobile/skin2.png" />
+            <source
+              media="(max-width: 768px)"
+              srcSet="/assets/product/mobile/skin2.png"
+            />
             <img
               src="/assets/product/skin2.png"
               alt="Skin Tone Collection"

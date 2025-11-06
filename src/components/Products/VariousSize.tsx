@@ -3,7 +3,7 @@ import styles from "./varioussize.module.css";
 
 export default function VariousSizePage() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
@@ -50,9 +50,7 @@ export default function VariousSizePage() {
             {/* Adhesion */}
             <div className={styles.infoBlock}>
               <h2 className={styles.infoTitle}>ADHESION</h2>
-              <p className={styles.infoText}>
-                Strong / Standard
-              </p>
+              <p className={styles.infoText}>Strong / Standard</p>
             </div>
 
             {/* Special Order */}
@@ -71,7 +69,10 @@ export default function VariousSizePage() {
       {/* Additional Image Section */}
       <div className={styles.additionalImageSection}>
         <picture>
-          <source media="(max-width: 768px)" srcSet="/assets/product/mobile/size2.png" />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/assets/product/mobile/size2.png"
+          />
           <img
             src="/assets/product/size2.png"
             alt="Various Size Collection"

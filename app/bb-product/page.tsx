@@ -64,7 +64,7 @@ export default function BBProduct() {
       <Navbar
         childLinksRows={bbProductLinksRows}
         pageTitle="BB PRODUCT"
-        subtitle="BB TAPE premium"
+        subtitle={!isMobile ? "BB TAPE premium" : undefined}
         onChildLinkClick={handleSectionChange}
         activeChildLink={activeSection}
       />

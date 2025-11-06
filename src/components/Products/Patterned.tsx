@@ -3,7 +3,7 @@ import styles from "./patterned.module.css";
 
 export default function PatternedPage() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
@@ -38,9 +38,7 @@ export default function PatternedPage() {
             {/* Adhesion */}
             <div className={styles.infoBlock}>
               <h2 className={styles.infoTitle}>ADHESION</h2>
-              <p className={styles.infoText}>
-                Strong / Standard / Soft
-              </p>
+              <p className={styles.infoText}>Strong / Standard / Soft</p>
             </div>
 
             {/* Special Order */}
@@ -59,7 +57,10 @@ export default function PatternedPage() {
       {/* Additional Image Section */}
       <div className={styles.additionalImageSection}>
         <picture>
-          <source media="(max-width: 768px)" srcSet="/assets/product/mobile/patterned2.png" />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/assets/product/mobile/patterned2.png"
+          />
           <img
             src="/assets/product/patterned2.png"
             alt="Patterned Collection"

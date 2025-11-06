@@ -3,7 +3,7 @@ import styles from "./beauty.module.css";
 
 export default function BeautyPage() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
@@ -36,9 +36,7 @@ export default function BeautyPage() {
             {/* Adhesion */}
             <div className={styles.infoBlock}>
               <h2 className={styles.infoTitle}>ADHESION</h2>
-              <p className={styles.infoText}>
-                Standard / Soft
-              </p>
+              <p className={styles.infoText}>Standard / Soft</p>
             </div>
 
             {/* Special Order */}
@@ -57,7 +55,10 @@ export default function BeautyPage() {
       {/* Additional Image Section */}
       <div className={styles.additionalImageSection}>
         <picture>
-          <source media="(max-width: 768px)" srcSet="/assets/product/mobile/beauty2.png" />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/assets/product/mobile/beauty2.png"
+          />
           <img
             src="/assets/product/beauty2.png"
             alt="Beauty Collection"

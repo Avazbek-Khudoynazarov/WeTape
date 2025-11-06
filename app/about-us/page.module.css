@@ -1,3 +1,11 @@
+#wetape-inc {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/about/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .pageContainer {
   min-height: 100vh;
   display: flex;
@@ -92,7 +100,7 @@
 
 .certificationLogos {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
   gap: 30px;
   flex-wrap: wrap;
@@ -239,7 +247,7 @@
   }
 
   .bannerSubtitle {
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
   }
 

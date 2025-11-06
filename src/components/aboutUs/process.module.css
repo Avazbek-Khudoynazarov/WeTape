@@ -88,7 +88,7 @@
   }
 
   .bannerSubtitle {
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
   }
 
@@ -97,7 +97,6 @@
   }
 }
 
-/* Small mobile devices (up to 480px) */
 @media (max-width: 480px) {
   .redBanner {
     padding: 20px 15px;
@@ -105,10 +104,6 @@
 
   .bannerTitle {
     font-size: 32px;
-  }
-
-  .bannerSubtitle {
-    font-size: 18px;
   }
 
   .heroImage {

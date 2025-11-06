@@ -3,7 +3,7 @@ import styles from "./variouscolor.module.css";
 
 export default function VariousColorPage() {
   return (
-    <div>
+    <div className={styles.configMain}>
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
@@ -29,7 +29,12 @@ export default function VariousColorPage() {
             <div className={styles.infoBlock}>
               <h2 className={styles.infoTitle}>STOCK COLOR</h2>
               <p className={styles.infoText}>
-                Beige / Black / Blue / Brown / Green / Grey /<br className={styles.mobileBreak} /> Light Blue / Lime / Navyblue / Orange / Pink /<br className={styles.mobileBreak} /> Purple / Red / Tiffany / Violet / White / Yellow
+                Beige / Black / Blue / Brown / Green / Grey /
+                <br className={styles.mobileBreak} /> Light Blue /{" "}
+                <br className={styles.mobileBreak2} /> Lime / Navyblue / Orange
+                / Pink /<br className={styles.mobileBreak} /> Purple / Red /
+                Tiffany /<br className={styles.mobileBreak2} /> Violet / White /
+                Yellow
               </p>
             </div>
 

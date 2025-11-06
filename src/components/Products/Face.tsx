@@ -3,7 +3,7 @@ import styles from "./face.module.css";
 
 export default function FacePage() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
@@ -36,9 +36,7 @@ export default function FacePage() {
             {/* Adhesion */}
             <div className={styles.infoBlock}>
               <h2 className={styles.infoTitle}>ADHESION</h2>
-              <p className={styles.infoText}>
-                Soft
-              </p>
+              <p className={styles.infoText}>Soft</p>
             </div>
 
             {/* Special Order */}
@@ -57,7 +55,10 @@ export default function FacePage() {
       {/* Additional Image Section */}
       <div className={styles.additionalImageSection}>
         <picture>
-          <source media="(max-width: 768px)" srcSet="/assets/product/mobile/face2.png" />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/assets/product/mobile/face2.png"
+          />
           <img
             src="/assets/product/face2.png"
             alt="Face Collection"

@@ -3,7 +3,7 @@ import styles from "./crosstape.module.css";
 
 export default function CrossTapePage() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
@@ -29,11 +29,14 @@ export default function CrossTapePage() {
             <div className={styles.infoBlock}>
               <h2 className={styles.infoTitle}>3 TYPE</h2>
               <p className={styles.infoText}>
-                <strong>A type</strong> - 9 strips / 20 sheets / Strip type 3 x 4 – 3mm
+                <strong>A type</strong> - 9 strips / 20 sheets / Strip type 3 x
+                4 – 3mm
                 <br />
-                <strong>B type</strong> - 6 strips / 20 sheets / Strip type 3 x 4 – 4mm
+                <strong>B type</strong> - 6 strips / 20 sheets / Strip type 3 x
+                4 – 4mm
                 <br />
-                <strong>C type</strong> - 2 strips / 20 sheets / Strip type 5 x 6 – 4mm
+                <strong>C type</strong> - 2 strips / 20 sheets / Strip type 5 x
+                6 – 4mm
               </p>
             </div>
 
@@ -53,7 +56,10 @@ export default function CrossTapePage() {
       {/* Additional Image Section */}
       <div className={styles.additionalImageSection}>
         <picture>
-          <source media="(max-width: 768px)" srcSet="/assets/product/mobile/cross2.png" />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/assets/product/mobile/cross2.png"
+          />
           <img
             src="/assets/product/cross2.png"
             alt="BB Cross Tape Collection"
