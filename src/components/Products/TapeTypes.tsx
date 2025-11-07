@@ -14,7 +14,10 @@ export default function TapeTypesPage() {
       {/* Image Section */}
       <div className={styles.imageSection}>
         <picture>
-          <source media="(max-width: 768px)" srcSet="/assets/product/mobile/types.png" />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/assets/product/mobile/types.png"
+          />
           <img
             src="/assets/product/types.png"
             alt="BB Tape Types"

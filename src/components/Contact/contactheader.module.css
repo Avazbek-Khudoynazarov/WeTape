@@ -65,29 +65,41 @@
 }
 
 .contactButton {
-  background-color: rgba(42, 35, 34, 0.9);
-  color: #ffffff;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 140px;
+  background-color: rgb(42, 35, 34);
+  color: white;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 18px 40px;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 50px;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 15px;
   transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 1000;
 }
 
 .contactButton:hover {
-  background-color: rgba(42, 35, 34, 1);
-  transform: translateY(-2px);
+  background-color: rgba(42, 35, 34, 0.8);
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 6px 20px rgba(42, 35, 34, 0.4);
+}
+
+.contactButton:active {
+  transform: translateX(-50%) translateY(0);
 }
 
 .arrow {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 48px !important;
+  display: flex;
+  align-items: center;
 }
 
 .contactImageSection {
@@ -124,8 +136,12 @@
   }
 
   .contactButton {
-    font-size: 18px;
-    padding: 16px 35px;
+    font-size: 24px;
+    padding: 18px 45px;
+  }
+
+  .arrow {
+    font-size: 36px !important;
   }
 
   .buttonContainer {
@@ -166,8 +182,24 @@
   }
 
   .contactButton {
-    font-size: 16px;
-    padding: 14px 30px;
+    font-size: 20px;
+    padding: 16px 32px;
+    bottom: 80px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contactButton:hover {
+    transform: translateX(-50%) translateY(-2px);
+  }
+
+  .contactButton:active {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .arrow {
+    font-size: 28px !important;
   }
 
   .buttonContainer {
@@ -201,13 +233,25 @@
   }
 
   .contactButton {
-    font-size: 14px;
-    padding: 12px 25px;
+    font-size: 18px;
+    padding: 14px 28px;
     gap: 10px;
+    bottom: 60px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contactButton:hover {
+    transform: translateX(-50%) translateY(-2px);
+  }
+
+  .contactButton:active {
+    transform: translateX(-50%) translateY(0);
   }
 
   .arrow {
-    font-size: 20px;
+    font-size: 24px !important;
   }
 
   .buttonContainer {

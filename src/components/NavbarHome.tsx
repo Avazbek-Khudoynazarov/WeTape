@@ -7,6 +7,7 @@ import styles from "./NavbarHome.module.css";
 
 export default function NavbarHome() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -27,6 +28,17 @@ export default function NavbarHome() {
     };
   }, [isMobileMenuOpen]);
 
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <div className={styles.navbarWrapper}>
       <nav className={styles.navbar}>
@@ -43,7 +55,7 @@ export default function NavbarHome() {
 
         <Link href="/" className={styles.logo}>
           <Image
-            src="/assets/home/logo.svg"
+            src={isMobile ? "/assets/home/logo2.svg" : "/assets/home/logo.svg"}
             alt="WE tape"
             width={180}
             height={60}

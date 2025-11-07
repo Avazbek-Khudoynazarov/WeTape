@@ -203,6 +203,10 @@
 
 /* Mobile responsiveness (up to 768px) */
 @media (max-width: 768px) {
+  .container {
+    margin-top: 0 !important;
+  }
+
   .backgroundImage {
     height: auto;
     min-height: 500px;
@@ -243,19 +247,51 @@
   .useCaseImageSection {
     margin-top: 80px;
     margin-bottom: 80px;
+    padding: 0;
+    width: 100%;
   }
+
   .useCaseGrid {
-    grid-template-columns: 1fr;
-    row-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .useCaseCard {
+    overflow: hidden;
   }
 
   .useCaseItem {
     width: 100%;
+    height: 115px;
+    object-fit: cover;
+  }
+
+  .useCaseOverlay {
+    display: none;
+  }
+
+  .useCaseCaption {
+    opacity: 1;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 10px;
+    background-color: rgba(42, 35, 34, 0.4);
+    width: 100%;
+    text-align: center;
   }
 }
 
 /* Small mobile devices (up to 480px) */
 @media (max-width: 480px) {
+  .container {
+    margin-top: 0 !important;
+  }
+
   .backgroundImage {
     min-height: 450px;
   }
@@ -289,5 +325,21 @@
   .useCaseImageSection {
     margin-top: 60px;
     margin-bottom: 60px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .useCaseGrid {
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+
+  .useCaseItem {
+    height: 115px;
+  }
+
+  .useCaseCaption {
+    font-size: 12px;
+    padding: 6px 8px;
   }
 }

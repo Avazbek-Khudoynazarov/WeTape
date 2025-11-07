@@ -7,23 +7,29 @@ import styles from "./internationalseminar.module.css";
 interface SwipeGroupProps {
   images: string[];
   groupIndex: number;
+  title: string;
 }
 
-function SwipeGroup({ images, groupIndex }: SwipeGroupProps) {
+function SwipeGroup({ images, groupIndex, title }: SwipeGroupProps) {
   return (
-    <div className={styles.swipeGroup}>
-      <div className={styles.imageCarousel}>
-        {images.map((image, index) => (
-          <div key={index} className={styles.imageSlide}>
-            <img
-              src={image}
-              alt={`Seminar ${groupIndex + 1}-${index + 1}`}
-              className={
-                groupIndex === 2 ? styles.group3Image : styles.groupImage
-              }
-            />
-          </div>
-        ))}
+    <div className={styles.swipeGroupWrapper}>
+      <div className={styles.swipeGroup}>
+        <div className={styles.imageCarousel}>
+          {images.map((image, index) => (
+            <div key={index} className={styles.imageSlide}>
+              <img
+                src={image}
+                alt={`Seminar ${groupIndex + 1}-${index + 1}`}
+                className={
+                  groupIndex === 2 ? styles.group3Image : styles.groupImage
+                }
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={styles.carouselTitle}>
+        {title}
       </div>
     </div>
   );
@@ -46,6 +52,12 @@ export default function InternationalSeminarPage() {
     ],
     // Third group - 2 images
     ["/assets/about/slide/3-1.png", "/assets/about/slide/3-2.png"],
+  ];
+
+  const groupTitles = [
+    "Educational program for beginners and experts",
+    "Practice program based on scientific evidences",
+    "Practical know-how from a taping treatment expert",
   ];
 
   return (
@@ -75,7 +87,12 @@ export default function InternationalSeminarPage() {
         {/* All groups visible in column, each swipable independently */}
         <div className={styles.groupsColumn}>
           {imageGroups.map((group, index) => (
-            <SwipeGroup key={index} images={group} groupIndex={index} />
+            <SwipeGroup
+              key={index}
+              images={group}
+              groupIndex={index}
+              title={groupTitles[index]}
+            />
           ))}
         </div>
 
@@ -98,7 +115,7 @@ export default function InternationalSeminarPage() {
 
       <div className={styles.buttonSection}>
         <a
-          href="http://balancetaping.net/"
+          href="https://bbtape.com/research.php"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.registerButton}>

@@ -1,5 +1,5 @@
 .redBanner {
-  background-color: #db2a1ae6;
+  background-color: #db2a1a;
   width: 100%;
   margin: 0 auto;
   padding: 40px 0;
@@ -38,12 +38,14 @@
 
 .heroImage {
   width: 100%;
-  height: 1770px;
+  height: 0;
+  padding-bottom: 92.29%;
   background-image: url("/assets/about/seminar.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top center;
   background-repeat: no-repeat;
   margin-top: 15px;
+  position: relative;
 }
 
 .buttonSection {
@@ -92,7 +94,7 @@
 
 .topTextSection {
   width: 323px;
-  background-color: #db2a1ae6;
+  background-color: #db2a1a;
   padding: 20px 5px;
   display: flex;
   justify-content: flex-end;
@@ -116,6 +118,11 @@
   gap: 20px;
   width: 100%;
   padding: 20px 0;
+}
+
+.swipeGroupWrapper {
+  position: relative;
+  width: 100%;
 }
 
 .swipeGroup {
@@ -173,6 +180,23 @@
   display: block;
 }
 
+.carouselTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #db2a1ae6;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 20px;
+  margin: 0;
+  z-index: 3;
+  pointer-events: none;
+  line-height: 1.4;
+  width: fit-content;
+}
+
 .contactSection {
   background-color: white;
   padding: 30px 20px;
@@ -215,7 +239,7 @@
   }
 
   .heroImage {
-    height: 700px;
+    padding-bottom: 92.29%;
   }
 
   .buttonSection {
@@ -361,5 +385,13 @@
 
   .arrow {
     font-size: 18px;
+  }
+}
+
+/* Extra small mobile devices (up to 400px) */
+@media (max-width: 400px) {
+  .carouselTitle {
+    font-size: 14px;
+    padding: 10px 16px;
   }
 }

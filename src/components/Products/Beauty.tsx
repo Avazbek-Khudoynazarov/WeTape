@@ -7,7 +7,7 @@ export default function BeautyPage() {
       {/* Red Banner */}
       <div className={styles.redBanner}>
         <div className={styles.bannerContent}>
-          <h1 className={styles.bannerTitle}>Beauty</h1>
+          <h1 className={styles.bannerTitle}>Lymph</h1>
         </div>
       </div>
 

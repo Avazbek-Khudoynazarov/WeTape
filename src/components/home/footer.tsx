@@ -13,7 +13,7 @@ export default function Footer() {
             height={32}
           />
         </a>
-        <a href="#" className={styles.iconLink}>
+        <a href="http://bbtape.shop/" className={styles.iconLink}>
           <Image
             src="/assets/home/bag.svg"
             alt="Shopping"

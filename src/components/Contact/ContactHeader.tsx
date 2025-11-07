@@ -1,4 +1,5 @@
 import React from "react";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import styles from "./contactheader.module.css";
 
 export default function ContactHeader() {
@@ -20,10 +21,14 @@ export default function ContactHeader() {
         </div>
 
         <div className={styles.buttonContainer}>
-          <button className={styles.contactButton}>
+          <a
+            href="https://bbtape.com/contact.php"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.contactButton}>
             Contact Us
-            <span className={styles.arrow}>→</span>
-          </button>
+            <ChevronRightIcon className={styles.arrow} />
+          </a>
         </div>
       </div>
 

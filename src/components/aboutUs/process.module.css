@@ -1,5 +1,5 @@
 .redBanner {
-  background-color: #db2a1ae6;
+  background-color: #db2a1a;
   width: 100%;
   margin: 0 auto;
   padding: 40px 0;
@@ -93,7 +93,7 @@
   }
 
   .heroImage {
-    height: 400px;
+    background-position: center top -170px;
   }
 }
 
@@ -107,6 +107,7 @@
   }
 
   .heroImage {
-    height: 300px;
+    height: 550px !important;
+    background-position: center top -130px;
   }
 }

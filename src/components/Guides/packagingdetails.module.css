@@ -106,6 +106,10 @@
 
 /* Mobile responsiveness (up to 768px) */
 @media (max-width: 768px) {
+  .container {
+    margin-top: 0 !important;
+  }
+
   .backgroundImage {
     height: auto;
     min-height: 500px;
@@ -138,6 +142,10 @@
 
 /* Small mobile devices (up to 480px) */
 @media (max-width: 480px) {
+  .container {
+    margin-top: 0 !important;
+  }
+
   .backgroundImage {
     min-height: 450px;
     background-image: url("/assets/guides/mobile/packaging.png");

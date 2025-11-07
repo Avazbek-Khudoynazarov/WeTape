@@ -72,7 +72,11 @@ export default function VariousColorPage() {
       </div>
 
       {/* Fixed E-Shop Button */}
-      <a href="#" className={styles.shopButton}>
+      <a
+        href="http://bbtape.shop/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.shopButton}>
         Go To E-Shop
       </a>
     </div>

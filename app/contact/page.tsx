@@ -7,7 +7,7 @@ import styles from "../about-us/page.module.css";
 export default function Contact() {
   return (
     <div className={styles.pageContainer}>
-      <Navbar pageTitle="CONTACT" />
+      <Navbar />
 
       <main className={styles.mainContent}>
         <ContactHeader />

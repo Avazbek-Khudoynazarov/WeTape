@@ -243,7 +243,6 @@ export default function Navbar({
         </ul>
       </div>
 
-      {/* Overlay */}
       {isMobileMenuOpen && (
         <div className={styles.overlay} onClick={closeMobileMenu} />
       )}
@@ -251,7 +250,7 @@ export default function Navbar({
       {(pageTitle ||
         (childLinks && childLinks.length > 0) ||
         (childLinksRows && childLinksRows.length > 0)) && (
-        <div className={styles.childNav}>
+        <div className={`${styles.childNav} ${(!childLinks || childLinks.length === 0) && (!childLinksRows || childLinksRows.length === 0) ? styles.noBorder : ''}`}>
           <div className={styles.childNavContainer}>
             {pageTitle && (
               <div className={styles.childNavTitleWrapper}>
